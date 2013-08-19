@@ -1,11 +1,11 @@
 A simple FAT32 bootloader written in assembly to boot from USB drives.
 
-##What this bootloader can do:
+## What this bootloader can do:
 
 It can load the first file( which should be a file less than 4096 bytes) which is located in a USB drive with a FAT32 file
 system to the memory and hand over the execution to that program.
 
-##Steps to use the Bootloader:
+## Steps to use the Bootloader:
 
 1. Compile the bootloader.
         nasm <path of the bootloader> ­f bin ­o boot.bin
