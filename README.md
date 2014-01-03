@@ -26,4 +26,5 @@ device).
 
 More information can be found in the pdf in the doc folder. Don't forget to leave a comment in http://blog.ishans.info/2012/01/19/a-simple-fat32-bootloader-written-in-assembly-to-boot-from-usb-drives/
 
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c61d5574272fc7a7e348d2ad649a183e "githalytics.com")](http://githalytics.com/ishanthilina/USB-FAT32-Bootloader)
 
