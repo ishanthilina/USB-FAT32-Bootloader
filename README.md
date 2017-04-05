@@ -17,7 +17,7 @@ system to the memory and hand over the execution to that program.
         Sudo /sbin/mkdosfs ­F 32 <absolute path of the device>
         
 4. Copy the Bootloader to the USB device.
-        Sudo /sbin/mkdosfs ­F 32 <absolute path of the device>
+        Sudo dd if=boot.bin of=/dev/fd0 #where fd0 is the target
         
 5. Copy the compiled kernel to the USB device( just as you copy any usual file to the USB
 device).
