@@ -7,20 +7,19 @@ system to the memory and hand over the execution to that program.
 
 ## Steps to use the Bootloader:
 
-1. Compile the bootloader.
-        nasm <path of the bootloader> ­f bin ­o boot.bin
+1. Compile the bootloader.<br>
+        `nasm <path of the bootloader> ­f bin ­o boot.bin`
         
-2. Unmount the USB device.
-        sudo umount <absolute path of the device>
+2. Unmount the USB device.<br>
+        `sudo umount <absolute path of the device>`
         
-3. Format the USB device to FAT32 file system.
-        Sudo /sbin/mkdosfs ­F 32 <absolute path of the device>
+3. Format the USB device to FAT32 file system.<br>
+        `sudo /sbin/mkdosfs ­F 32 <absolute path of the device>`
         
-4. Copy the Bootloader to the USB device.
-        Sudo dd if=boot.bin of=/dev/fd0 #where fd0 is the target
+4. Copy the Bootloader to the USB device.<br>
+        `sudo dd if=boot.bin of=<absolute path of the device>`
         
-5. Copy the compiled kernel to the USB device( just as you copy any usual file to the USB
-device).
+5. Copy the compiled kernel to the USB device (just as you copy any usual file to the USB device).
 
 6. Restart the computer and boot from the USB device!.
 
