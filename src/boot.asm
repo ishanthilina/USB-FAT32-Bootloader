@@ -7,7 +7,8 @@
 ;*************************************************************************
 [BITS 16]
 [ORG 0x0000]
- jmp     START
+ jmp short START
+ nop
     
      OEM_ID                db 		"QUASI-OS"
      BytesPerSector        dw 		0x0200
@@ -29,9 +30,10 @@
      FSInfoSector          dw 		0x0001
      BackupBootSector      dw 		0x0006
 
-     TIMES 13 DB 0 ;jumping to next offset
+     TIMES 12 DB 0 ;jumping to next offset
 
      DriveNumber           db 		0x00
+     ReservedByte          db   	0x00
      Signature             db 		0x29
      VolumeID              dd 		0xFFFFFFFF
      VolumeLabel           db 		"QUASI  BOOT"
